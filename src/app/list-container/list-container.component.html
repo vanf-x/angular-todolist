@@ -1,0 +1,18 @@
+<div class="container border p-5 mt-5 bg-white">
+  <h1 class="text-center">TODOLIST</h1>
+  <app-tasks-input-bar></app-tasks-input-bar>
+  <app-tasks-list [tasksList]="tasksList"></app-tasks-list>
+
+  <div class="container text-center mt-5">
+    <div class="row align-items-start">
+      <div class="col">
+        <app-percentage-bar></app-percentage-bar>
+      </div>
+      <div class="col">
+        <button class="btn custom-button">
+          Remove checked <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

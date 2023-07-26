@@ -1,0 +1,25 @@
+<ul class="list-group list-group-flush">
+  <li
+    class="list-group-item"
+    *ngFor="let task of tasksList; let i = index"
+    [ngClass]="{ even: i % 2 === 0, odd: i % 2 !== 0 }"
+  >
+    <div class="task-item">
+      <div>
+        <input
+          class="form-check-input me-3"
+          type="checkbox"
+          value=""
+          id="{{ task.id }}"
+        />
+        <label class="form-check-label " for="{{ task.id }}">
+          {{ task.value }}
+        </label>
+      </div>
+      <div class="task-buttons">
+        <button class="btn"><i class="bi bi-pencil text-secondary"></i></button>
+        <button class="btn"><i class="bi bi-x-lg text-secondary"></i></button>
+      </div>
+    </div>
+  </li>
+</ul>

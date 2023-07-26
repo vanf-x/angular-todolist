@@ -1,0 +1,14 @@
+<div class="progress-container">
+  <div
+    class="progress"
+    role="progressbar"
+    aria-label="Example with label"
+    [attr.aria-valuenow]="percentage"
+    aria-valuemin="0"
+    aria-valuemax="100"
+  >
+  <span class="progress-text"><strong>1</strong> of <strong>2</strong> tasks done</span>
+    <div class="progress-bar" [style.width]="50 + '%'">
+    </div>
+  </div>
+</div>
